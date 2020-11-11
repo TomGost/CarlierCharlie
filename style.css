@@ -1,0 +1,597 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    font-family: Verdana, sans-serif;
+    background-image: url(images/fondopaque.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#content{
+    flex-grow: 1;
+}
+h1{
+    color: white; 
+    font-size: 2.2rem;
+    font-weight: normal;
+    font-family: Verdana, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px black;
+    margin: 0;
+}
+h2{
+    font-weight: bold;
+    font-size: 2.6rem;
+    margin: 0;
+    font-family: Georgia, serif;
+}
+h3{
+    font-weight: bold;
+    font-size: 1.8rem;  
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+ul{
+    margin: 0% 0%;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    position: fixed;
+    top: 0;
+    padding: 0px;
+    background: RGBa(93, 109, 126,0.9);
+    height: 85px;
+    width: 50%;
+    float: left;
+    margin: 0px 0% 0% 0%; 
+}
+header h1{
+    text-align: left;
+    padding: 0.5% 0%;
+    margin: 0.5% 0 0 6%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 85px;
+    width: 50%;
+    margin: 0% 0% 0% 50%;
+    background: RGBa(93, 109, 126,0.9);
+    font-size: 1rem;
+}
+nav label{
+    display: none;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+nav>ul{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+nav>ul>li{
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin: auto;
+}
+nav>ul>li>a{
+    padding: 5px;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 2px black;
+    color: whitesmoke;
+}
+a:hover{
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 0px 0px 2px black;
+}
+.bold{
+    font-weight: bold;
+}
+.bigtext{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.sizetextmedium{
+    font-size: 2rem;
+}
+.uppercase{
+    text-transform: uppercase; 
+}
+.textcenter{
+    text-align: center;
+}
+
+.onglet{
+    margin: 7% 35% 0 35%;
+    width: 30%;
+    height: auto;
+    background: RGBa(93, 109, 126,0.8);
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    box-shadow: 0px 0px 4px RGBa(93, 109, 126);
+}
+footer{
+    display: inline-block;
+    width: 100%;
+    margin-top: 2%;
+    background-color: RGBa(30,30,30);
+    color: white;
+    border-top: 1px dashed whitesmoke;
+    font-size: 1.2rem;
+}
+.contenu-footer{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+}
+footer .bloc{
+    width: 33%;
+}
+#telephone{
+    display: inline-block;
+    width: 50%;
+    margin: 8% 25% 0 25%;
+    text-align: center;
+    background: RGBa(93, 109, 126,0.8);
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+    text-transform: none;
+    box-shadow: 0px 0px 4px RGBa(93, 109, 126);
+    font-family: Georgia, serif;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+#renovationmaison{
+    height: 200px;
+    background-image: url(images/Renovation%20maison%20avant%20apr%C3%A8s-compressed.jpg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 0%;
+}
+#DevisGarantie{
+    font-size: 1.3rem;
+    text-shadow: 0px 0px 2px black;
+    width: 40%;
+    height: 100%;
+    margin: 6% 30% 10% 30%;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    background-color: aqua;
+    text-transform: uppercase;
+}
+.devis{
+    background-color: RGB(0,105,92);
+    box-shadow: 0px 0px 2px black;
+    display: inline-block;
+    width: 39%;
+    text-align: center;
+    float: left;
+    padding: 5%;
+    border-radius: 50%;
+}
+.garantie{
+    background-color: RGB(0,105,92);
+    box-shadow: 0px 0px 2px black;
+    display: inline-block;
+    width: 39%;
+    text-align: center;
+    float: right;
+    padding: 5%;
+    border-radius: 50%;
+   
+}
+.services{
+    height: 200px;
+    display: inline-block;
+    background-color: RGBa(255,255,255,0.8);
+    text-align: center;
+    text-shadow: 0px 0px 2px white;
+    box-shadow: 0px 0px 3px RGBa(255,255,255,0.8);
+    border-radius: 7%;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.services p{
+    float: left;
+    height: 100%;
+    display: inline-block;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 10%;
+}
+#servicesligne1{
+    margin: 0% 12.5%;
+    width: 75%;
+    margin-bottom: 1%;
+}
+#servicesligne1 p{
+    width: 25%;
+}
+#servicesligne2{
+    margin: 0% 25%;
+    width: 50%;
+}
+#servicesligne2 p{
+    width: 50%;
+}
+section>p>img{
+    width: auto;
+    height: 40%;
+    margin: 7% 0 10% 0;
+}
+#posecarrelage{
+    width: 25%;
+    margin: 10% 0 0 14%;
+    
+}
+#posecarrelage img{
+    width: 100%;
+    position: relative;
+    float: left;
+    border-radius: 20%;
+    box-shadow: 0px 0px 4px RGBa(93, 109, 126);
+}
+#contact{
+    background: RGBa(93, 109, 126,0.8);
+    font-size: 1.8rem;
+    position: relative;
+    float: right;
+    width: 40%;
+    margin: 11% 20% 0 1%;
+    box-shadow: 0px 0px 4px RGBa(93, 109, 126);
+    border-radius: 2%;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+}
+#contact h3{
+    float: left;
+    text-align: right;
+    width: 36%;
+    margin-left: 1%;
+}
+#contact p{
+    float: left;
+    width: 60%;
+    margin: 0 0 0 2%;
+}
+.moyencontact{
+    width: 95%;
+    display: inline-block;
+    margin: 2% 0 3% 0%;
+}
+#iconescontact{
+    margin-left: 25%;
+}
+#iconescontact img{
+    height: 70px;
+    width: auto;
+    margin-left: 1%;
+}
+#iconescontact img:hover{
+    height: 90px;
+}
+#Devis-Gratuit{
+    width: 70%;
+    margin: 8% 15% 0 15%;
+    background: RGBa(93, 109, 126,0.8);
+    font-size: 1.6rem;
+    text-align:center;
+    box-shadow: 0px 0px 4px RGBa(93, 109, 126);
+    border-radius: 2%;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+}
+#presentation{
+    width: 70%;
+    margin: 8% 15% 0 15%;
+    background: RGBa(93, 109, 126,0.8);
+    font-size: 1.5rem;
+    text-align:center;
+    box-shadow: 0px 0px 4px RGBa(93, 109, 126);
+    border-radius: 2%;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+}
+#presentationtexte{
+    margin: 0% 2%;
+}
+#presentation p{
+    margin-bottom: 3%;
+}
+#presentation ul{
+    margin: 0% 0 3% 25%;
+    font-weight: bold;
+    text-align: justify;
+}
+#presentation li{
+    list-style-type: circle;
+    margin-bottom: 2%;
+}
+#realisations{
+    width: 75%;
+    margin: 5% 12.5% 0% 12.5%;
+}
+#realisations img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1%;
+}
+
+@media screen and (max-width: 1700px){
+    html{
+        font-size: 90%;
+    }
+    #DevisGarantie{
+        width: 45%;
+        margin: 6% 27.5% 10% 27.5%;
+    }
+}
+@media screen and (max-width: 1450px){
+    #contact{
+        width: 40%;
+        margin-right: 20%;
+    }
+    #posecarrelage{
+        margin: 8% 0 0 9%;
+        width: 30%;
+    }
+    #DevisGarantie{
+        width: 50%;
+        margin: 6% 25% 10% 25%;
+    }
+}
+@media screen and (max-width: 1370px){
+    html{
+        font-size: 80%;
+    }
+    .onglet{
+    margin: 9% 30% 0 30%;
+    width: 40%;
+    }
+    nav{
+        position: static;
+        width: 100%;
+        margin: 0% 0% 0% 0%;
+    }
+    header{
+        position: static;
+        width: 100%;
+        margin: 0px 0% 0% 0%; 
+        height: 80px;
+    }
+    header h1{
+        text-align: center;
+        margin: 0.5% 0 0 0;
+    }
+}
+@media screen and (max-width: 1250px){
+    html{
+        font-size: 75%;
+    }
+}
+@media screen and (max-width: 1150px){
+    #telephone{
+        margin-top: 10%;
+    }
+    .onglet{
+        margin-top: 11%;
+    }
+    #DevisGarantie{
+        width: 55%;
+        margin: 6% 22.5% 15% 22.5%;
+    }
+    #contact{
+        width: 50%;
+        margin-right: 10%;
+    }
+    #posecarrelage{
+        margin: 8% 0 0 4%;
+        width: 35%;
+    }
+}
+@media screen and (max-width: 1100px){
+    #telephone{
+    font-size: 2rem;
+    }
+    #telephone .bigtext{
+        font-size: 2.8rem;
+    }
+}
+@media screen and (max-width: 1000px){
+    #telephone{
+        font-size: 1.8rem;
+    }
+    #telephone .bigtext{
+        font-size: 2.6rem;
+    }  
+}
+@media screen and (max-width: 900px) /*Version Mobile*/ {
+    .menu-mobile/*label*/{
+        display: block;
+        text-align: center;
+        color: white;
+        text-shadow: 0px 0px 2px black;
+        font-weight: bold;
+        font-size: 1.6rem;
+        padding: 5px 0;
+    }
+    #menu-mobile[type=checkbox]:checked ~ ul/*input*/{
+        display: block;
+    }
+    header{
+        position:static;
+        background: RGBa(93, 109, 126,0.9);
+        margin: 0px 0% 0% 0%;
+    }
+    header h1{
+        text-align: center;
+        margin: 0.5% 0 0 0%;
+    }
+    nav{
+        display: inline-block;
+        position: static;
+        width: 100%;
+        margin: 0%;
+        height: auto;
+    }
+    nav ul{
+        display: none;
+    }
+    nav ul li, nav ul li a{
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li{
+        box-shadow: 0px 0px 1px white;
+        padding: 10px 0;
+        margin:0;
+        font-weight: bold;
+    }
+    nav ul li a, nav ul li:hover a{
+        padding: 5px 0px;
+    }
+    footer{
+        display: inline-block;
+        width: 100%;
+        font-size: 1.1rem;
+        margin-top: 5%;
+    }
+    .contenu-footer{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    footer .bloc{
+        width: 48%;
+        padding: 2px;
+    }
+    .onglet{
+        margin: 7% 15% 0 15%;
+        width: 75%;
+    }
+    #telephone{
+        font-size: 1.1rem;
+        width: 98%;
+        margin: 6% 1% 0 1%;
+    }
+    #telephone .bigtext{
+        font-size: 2.3rem;
+    } 
+
+    #renovationmaison{
+        height: 150px;
+        background-image: url(images/Renovation%20maison%20avant%20apr%C3%A8s.jpg);
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 12%;
+    }
+    #DevisGarantie{
+        width: 80%;
+        margin: 6% 10% 20% 10%;
+    }
+    .services{
+        height: 200px;
+        display: block;
+        font-size: 1.3rem;
+    }
+    .services p{
+        float: left;
+        height: 100%;
+        display: inline-block;
+    }
+    #servicesligne1{
+        margin: 0% 0%;
+        width: 100%;
+    }
+    #servicesligne1 p{
+        width: 50%;
+    }
+    #servicesligne2{
+        margin: 0% 0%;
+        width: 100%;
+    }
+    #servicesligne2 p{
+        width: 50%;
+    }
+    #Devis-Gratuit{
+    width: 95%;
+    margin: 8% 2.5% 0 2.5%;
+    }
+    #presentation{
+        width: 95%;
+        margin: 8% 2.5% 0 2.5%;
+        background: RGBa(93, 109, 126,0.8);
+        font-size: 1.5rem;
+        text-align:center;
+        box-shadow: 0px 0px 4px RGBa(93, 109, 126);
+        border-radius: 2%;
+        color: whitesmoke;
+        text-shadow: 1px 1px 1px black;
+    }
+    #presentation ul{
+        margin-left:0px;
+    }
+    #contact{
+        float: none;
+        overflow: hidden;
+        width: 100%;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    #posecarrelage{
+        margin: 1% 2.5% 0 2.5%;
+        width: 95%;
+        height: 350px;
+    }
+    #contact h3{
+        text-align: center;
+        width: 100%;
+        margin-left: 0%;
+        padding: 5px ;
+    }
+    #contact p{
+        text-align: center;
+        width: 100%;
+        margin: 0 0 0 0%;
+        padding: 5px ;
+    }
+    #iconescontact{
+        margin-left: 25%;
+    }
+    #iconescontact img{
+        height: 70px;
+        width: auto;
+        margin-left: 1%;
+    }
+    #realisations{
+        width: 100%;
+        margin: 5% 0% 0% 0%;
+    }
+}
+
+
